@@ -1,0 +1,223 @@
+body {
+	background-color: #f5f5f5;
+}
+.jd_layout {
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.jd_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	z-index: 1000;
+	background-color: rgba(201, 21, 35,0);
+}
+.jd_header .jd_header_box {
+	width: 100%;
+	height: 40px;
+	max-width: 640px;
+	min-width: 300px;
+	margin: 0 auto;
+	position: relative;
+	// background-color: green;
+}
+.jd_header .jd_header_box .icon_logo {
+	width: 60px;
+	height: 36px;
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	background-position: 0 -103px;
+}
+.jd_header .jd_header_box form {
+	width: 100%;
+	height: 40px;
+	padding-left: 75px;
+	padding-right: 50px;
+	/*margin-top: 5px;*/
+
+}
+.jd_header .jd_header_box form .icon_search {
+	height: 20px;
+    width:20px;
+    position: absolute;
+    background-position: -60px -109px;
+    top: 10px;
+    left: 85px;
+
+
+}
+.jd_header .jd_header_box form input[type="search"] {
+	width: 100%;
+	height: 30px;
+	margin-top: 5px;
+	border-radius: 15px;
+	padding-left: 30px;
+	line-height: 30px;
+}
+.jd_header .jd_header_box .login {
+	color: #fff;
+	line-height: 40px;
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.jd_banner {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.jd_banner ul:first-child {
+	width: 1000%;
+}
+.jd_banner ul:first-child li {
+	float: left;
+	width: 10%;
+}
+.jd_banner ul:first-child li a {
+	width: 100%;
+}
+.jd_banner ul:first-child li a img {
+	width: 100%;
+	vertical-align: bottom;
+}
+.jd_banner ul:nth-child(2) {
+	/*background-color: red;*/
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -80px;
+	z-index:2;
+}
+.jd_banner ul:nth-child(2) li {
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	float: left;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.jd_banner ul:nth-child(2) li.now {
+	background-color: #fff;
+}
+.jd_nav {
+	width: 100%;
+}
+.jd_nav ul {
+	width: 100%;
+	padding: 10px 0;
+}
+.jd_nav ul li {
+	width: 25%;
+	float: left;
+}
+.jd_nav ul li a {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.jd_nav ul li a img {
+	width: 40px;
+	height: 40px;
+}
+.jd_nav ul li a p {
+	color: #666;
+	text-align: center;
+	padding: 3px 0 7px;
+	font-size: 15px;
+}
+/*main部分*/
+/*商品子盒子*/
+.jd_product {
+	width: 100%;
+}
+.jd_product .product_box {
+	width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 1px #e0e0e0;
+}
+.jd_product .product_box .product_box_tit {
+	width: 100%;
+	height: 32px;
+}
+.jd_product .product_box .product_box_tit .sk_icon {
+	/*display: inline-block;*/
+	float: left;
+	width: 16px;
+	height: 20px;
+	background: url("../images/seckill-icon.png") no-repeat;
+	background-size: 16px 20px;
+}
+.jd_product .product_box .product_box_tit .sk_name {
+	float: left;
+}
+.jd_product .product_box .product_box_tit .sk_time {
+	float: left;
+}
+.jd_product .product_box .product_box_tit .sk_time span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: #000;
+	color: #fff;
+	line-height: 15px;
+	text-align: center;
+
+}
+.jd_product .product_box .product_box_tit .sk_time span:nth-child(3n) {
+	display: inline;
+	color: #000;
+	background-color: #fff;
+}
+
+.jd_product .product_box .product_box_con {
+	width: 100%;
+}
+.jd_product .product_box .product_box_con ul {
+	width: 100%;
+}
+.jd_product .product_box .product_box_con ul li {
+	width: 33.33%;
+	float: left;
+	border-right: 1px solid #e0e0e0;
+}
+.jd_product .product_box .product_box_con ul li:last-child {
+	border-right: none;
+}
+.jd_product .product_box .product_box_con ul li a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.jd_product .product_box .product_box_con ul li a img {
+	width: 64%;
+}
+.jd_product .product_box .product_box_con ul li a p:first-of-type {
+	color: #d8505c;
+	padding-top: 5px;
+}
+.jd_product .product_box .product_box_con ul li a p:last-of-type {
+	text-decoration: line-through;
+	color: #666;
+	padding-top: 5px;
+}
+.jd_product .product_box .product_box_con ul li.w_50 {
+	width: 50%;
+}
+.jd_product .product_box .product_box_con ul li.w_50 img {
+	width: 100%;
+}
+.b_right {
+	border-right: 1px solid #e0e0e0;
+}
+.b_bottom {
+	border-bottom: 1px solid #e0e0e0;
+}
+.li_right {
+	float: right !important;
+}
